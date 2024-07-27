@@ -7,11 +7,7 @@ app = Flask(__name__)
 def generate_loto():
     # Génère une liste de nombres de 1 à 49
     numbers = list(range(1, 50))
-
-    # Mélange les nombres de façon aléatoire
     random.shuffle(numbers)
-
-    # Sélectionne les 10 premiers nombres de la liste mélangée
     selected_numbers = numbers[:10]
 
     # Modèle HTML pour afficher les numéros sélectionnés
